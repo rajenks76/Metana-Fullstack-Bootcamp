@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Slider</title>
+     <link rel="stylesheet" href="./../Styles/moodSelecter.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="close-btn">&times;</div>
+
+    <h3>How are you feeling?</h3>
+
+    <div class="icons">
+        <span>☹️</span>
+        <span>😐</span>
+        <span>😊</span>
+    </div>
+
+    <input id="moodSlider" type="range" min="0" max="100" value="40">
+</div>
+
+<script>
+    const slider = document.getElementById("moodSlider");
+
+    function updateSlider() {
+        slider.style.setProperty("--value", slider.value + "%");
+    }
+
+    updateSlider();
+    slider.addEventListener("input", updateSlider);
+</script>
+
+</body>
+</html>

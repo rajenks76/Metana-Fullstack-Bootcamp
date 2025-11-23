@@ -1,0 +1,71 @@
+    body {
+        background: #1d2330;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        color: white;
+    }
+
+    .card {
+        background: #2a3142;
+        width: 350px;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #B5FA2F;
+    }
+
+    .duration {
+        margin-top: 5px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    .time {
+        margin-top: 18px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .check {
+        width: 22px;
+        height: 22px;
+        border: 2px solid #B5FA2F;
+        border-radius: 50%;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #B5FA2F;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    /* Weather icon */
+    .weather {
+        color: #B5FA2F;
+        font-size: 34px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .based-on {
+        margin-top: 40px;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+
+    .weather-detail {
+        color: #B5FA2F;
+        font-size: 15px;
+        margin-top: 2px;
+    }

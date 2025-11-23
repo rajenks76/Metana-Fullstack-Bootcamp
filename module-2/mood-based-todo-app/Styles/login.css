@@ -1,0 +1,112 @@
+    :root {
+      --lime: #B5FA2F;
+      --bg-dark: #0d0f10;
+      --card-bg: #1a1d22;
+      --input-bg: #2a2d32;
+      --text: #e6e6e6;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text);
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background-color: var(--card-bg);
+      padding: 32px 28px;
+      width: 360px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .login-box h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .login-box h3 {
+      margin: 18px 0 6px;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .login-box p {
+      color: var(--muted);
+      text-align: center;
+      margin: 0 0 22px;
+      font-size: 14px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 20px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .close-btn:hover {
+      color: var(--lime);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      border: 1px solid #2f3238;
+      background-color: var(--input-bg);
+      color: var(--text);
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    input::placeholder {
+      color: #777;
+    }
+
+    input:focus {
+      border-color: var(--lime);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--lime);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.25s, transform 0.1s;
+    }
+
+    button:hover {
+      background-color: #c7ff5f;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }

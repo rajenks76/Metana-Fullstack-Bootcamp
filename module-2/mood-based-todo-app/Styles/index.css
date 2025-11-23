@@ -1,0 +1,161 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111418;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .welcome {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .welcome-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #B5FA2F;
+      border: 3px solid #222;
+    }
+
+    .welcome h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .welcome p {
+      margin: 0;
+      color: #aaa;
+    }
+
+    /* Mood section */
+    .mood {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mood button {
+      background-color: #1b1f26;
+      border: none;
+      color: #B5FA2F;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Main Layout */
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 20px 40px;
+    }
+
+    .container {
+      background-color: #1b1f26;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Ready for Today section */
+    .container h3 {
+      color: #B5FA2F;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    .task-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .task-header button {
+      margin-left: 10px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .add-task {
+      background-color: #2a2f38;
+      color: white;
+    }
+
+    .complete-all,
+    .show-completed {
+      background-color: #B5FA2F;
+      color: #111;
+    }
+
+    /* Tasks grid */
+    .task-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .task {
+      background-color: #242b33;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .task h4 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .task p {
+      margin: 5px 0;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    .task time {
+      display: block;
+      margin-top: 5px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    /* Suggested tasks */
+    .suggested-task {
+      background-color: #242b33;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .suggested-task h4 {
+      margin: 0;
+      color: #ffae00;
+    }
+
+    .suggested-task p {
+      margin: 5px 0;
+      color: #aaa;
+    }
+
+    .suggested-task .based-on {
+      font-size: 0.8em;
+      color: #B5FA2F;
+    }
+  

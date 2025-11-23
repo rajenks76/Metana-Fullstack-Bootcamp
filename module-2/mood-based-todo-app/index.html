@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Dashboard</title>
+     <link rel="stylesheet" href="./Styles/index.css">
+</head>
+<body>
+  <header>
+    <div class="welcome">
+  <!--    <div class="welcome-circle"></div> -->
+	<!-- Innerrmost circle -->
+	<svg width="50" height="50">
+	<!-- Outermost circle -->
+	<circle cx="25" cy="25" r="25" fill="#B5FA2F"/>
+	<!-- Middle circle -->
+	<circle cx="25" cy="25" r="21" fill="black"/>
+	<!-- Inner circle -->
+	<circle cx="25" cy="25" r="17" fill="#B5FA2F"/>
+	</svg>
+  
+      <div>
+        <h2>Welcome</h2>
+        <p>Guest.</p>
+      </div>
+    </div>
+
+    <div class="mood">
+      <span>Mood: 🙂</span>
+      <button>🌦️</button>
+      <button>👤</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left container -->
+    <div class="container">
+      <div class="task-header">
+        <h3>Ready for Today?</h3>
+        <div>
+          <button class="add-task">+ Add Task</button>
+          <button class="complete-all">Complete All</button>
+          <button class="show-completed">Show Completed</button>
+        </div>
+      </div>
+      <p>You have 3 tasks planned for today</p>
+
+      <div class="task-list">
+        <div class="task">
+          <h4>Run!</h4>
+          <p>4 mins</p>
+          <time>1:21 PM</time>
+        </div>
+        <div class="task">
+          <h4>Don't Run</h4>
+          <p>34 mins</p>
+          <time>12:34 AM</time>
+        </div>
+        <div class="task">
+          <h4>Bake Brownies</h4>
+          <p>809 mins</p>
+          <time>12:09 PM</time>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right container -->
+    <div class="container">
+      <h3>Suggested tasks</h3>
+
+      <div class="suggested-task">
+        <h4>Read a Book</h4>
+        <p>45 mins</p>
+        <time>12:43 PM</time>
+        <p class="based-on">Based on Mood</p>
+      </div>
+
+      <div class="suggested-task">
+        <h4>Meditation</h4>
+        <p>15 mins</p>
+        <time>12:43 PM</time>
+        <p class="based-on">Based on Weather - Mostly Cloudy</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
